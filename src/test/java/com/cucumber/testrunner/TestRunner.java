@@ -13,7 +13,7 @@ import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin= {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:src\\test\\resource\\com\\extentreport\\report.html"}, 
+@CucumberOptions(plugin= {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:src\\test\\resource\\com\\extentreport\\report11.html"}, 
 features = "src\\test\\java\\com\\cucumber\\feature", 
 glue = "com.cucumber.stepdefinition", monochrome=true)
 
