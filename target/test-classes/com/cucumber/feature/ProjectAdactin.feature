@@ -2,15 +2,12 @@ Feature: Adactin hotel page automation scripts
 
 
 @TC-101
-Scenario Outline: To verify the login details
+Scenario: To verify the login details
 Given Launch the hotel reservation application using url
-And User enter the <name>
-And User enter the <password>
+And User enter the name1
+And User enter the password1
 And User click on login
 
-Examples:
-|name|password|
-|prakashmano|9841492682|
 
 
 @TC-102

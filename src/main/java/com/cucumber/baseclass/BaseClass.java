@@ -2,9 +2,16 @@ package com.cucumber.baseclass;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,6 +46,28 @@ public class BaseClass {
 	driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 	return driver; 
 	}
+	public static String getInputfromExcelAndgetText(int row, int cellnum) throws Exception {
+		// TODO Auto-generated method stub
+		String stringCellValue = null;
+		File f = new File("C:\\Users\\Prakash\\eclipse\\java-oxygen\\CucumberAllMethods\\excel\\Excel1.xlsx");
+		FileInputStream fi = new FileInputStream(f);
+		Workbook wb1 = new XSSFWorkbook(fi);
+		Sheet sheetAt = wb1.getSheetAt(0);
+		Cell cell = sheetAt.getRow(row).getCell(cellnum);
+		if (cell.getCellType().equals(CellType.STRING)) {
+		String stringCellValue2 = cell.getStringCellValue();
+		System.out.println(stringCellValue2);
+		}
+		else if (cell.getCellType().equals(CellType.NUMERIC)) {
+		double numericCellValue = cell.getNumericCellValue();
+		long l = (long) numericCellValue;
+		stringCellValue = String.valueOf(l);
+		System.out.println(stringCellValue);
+		}
+		return stringCellValue;
+		}
+	
+	
 	public static void geturl(String url) throws Exception {
 	try {
 		driver.get(url);

@@ -1,0 +1,248 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "To verify the login details",
+        "description": "",
+        "id": "adactin-hotel-page-automation-scripts;to-verify-the-login-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18361304594,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch the hotel reservation application using url",
+            "match": {
+              "location": "StepDefinition.launch_the_hotel_reservation_application_using_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9299175247,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter the name1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.user_enter_the_name(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 318324107,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter the password1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.user_enter_the_password(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7537303502,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on login",
+            "match": {
+              "location": "StepDefinition.user_click_on_login()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TC-101"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "To check whether checkout datefield accepts date earlier than checkin date",
+        "description": "",
+        "id": "adactin-hotel-page-automation-scripts;to-check-whether-checkout-datefield-accepts-date-earlier-than-checkin-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1249563675,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Launch the hotel reservation application using url one",
+            "match": {
+              "location": "StepDefinition.launch_the_hotel_reservation_application_using_url_one()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 248149038,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the name one",
+            "match": {
+              "location": "StepDefinition.user_enter_the_name_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208219077,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter the password one",
+            "match": {
+              "location": "StepDefinition.user_enter_the_password_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1167507439,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on login one",
+            "match": {
+              "location": "StepDefinition.user_click_on_login_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 544597939,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User select the location one",
+            "match": {
+              "location": "StepDefinition.user_select_the_location_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201348099,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User select the hotel one",
+            "match": {
+              "location": "StepDefinition.user_select_the_hotel_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190211329,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User select the roomtype one",
+            "match": {
+              "location": "StepDefinition.user_select_the_roomtype_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156304212,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User select the no of rooms one",
+            "match": {
+              "location": "StepDefinition.user_select_the_no_of_rooms_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 612162960,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User enter the checkin date one",
+            "match": {
+              "location": "StepDefinition.user_enter_the_checkin_date_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242230337,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User enter the checkout date as date earlier than checkindate one",
+            "match": {
+              "location": "StepDefinition.user_enter_the_checkout_date_as_date_earlier_than_checkindate_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 248888572,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User click on search one",
+            "match": {
+              "location": "StepDefinition.user_click_on_search_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154710060,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify whether error message is displayed or not one",
+            "match": {
+              "location": "StepDefinition.verify_whether_error_message_is_displayed_or_not_one()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@TC-102"
+          }
+        ]
+      }
+    ],
+    "name": "Adactin hotel page automation scripts",
+    "description": "",
+    "id": "adactin-hotel-page-automation-scripts",
+    "keyword": "Feature",
+    "uri": "ProjectAdactin.feature"
+  }
+]

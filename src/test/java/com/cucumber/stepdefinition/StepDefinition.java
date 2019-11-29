@@ -21,15 +21,17 @@ public class StepDefinition extends BaseClass {
 	public void launch_the_hotel_reservation_application_using_url() throws Throwable {
 		driver.get("https://adactin.com/HotelApp/");
 	}
-
-	@Given("^User enter the prakashmano$")
-	public void user_enter_the_prakashmano() throws Throwable {
+	@Given("^User enter the name(\\d+)$")
+	public void user_enter_the_name(int arg1) throws Throwable {
+		System.out.println(getInputfromExcelAndgetText(1, 0));
 		sendkeys(pg.getLp().getUsername(), "prakashmano");
 	}
-	@Given("^User enter the (\\d+)$")
-	public void user_enter_the(int arg1) throws Throwable {
+
+	@Given("^User enter the password(\\d+)$")
+	public void user_enter_the_password(int arg1) throws Throwable {
 		sendkeys(pg.getLp().getPassword(), "9841492682");
 	}
+
 	@Given("^User click on login$")
 	public void user_click_on_login() throws Throwable {
 		clickelement(pg.getLp().getLogin());
